@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+@keyframes fadein{
+    from {background-color: white;}
+    to {background-color: lightgrey;}
+}
+
+@keyframes fadeout {
+    from {background-color: lightgrey;}
+    to {background-color: white;}
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    max-width: 1;
+    max-height: 1;
+    background-color: white;
+}
+
+.navbar{
+    height: 88px;
+    background-color: white;
+    text-align: center;
+}
+
+#logo{
+    text-align: left;
+    font-size: 24px;
+}
+
+li, a{
+    animation-name: fadeout;
+    animation-duration: 0.5s;
+    background-color: white;
+    text-decoration: none;
+    font-family: Roboto;
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+a:hover{
+    animation-name: fadein;
+    animation-duration: 0.5s;
+    background-color: lightgrey;
+}
